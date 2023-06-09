@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .row-padding img {margin-bottom: 12px}
@@ -45,7 +46,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div class="top hide-large hide-medium" id="myNavbar">
   <div class="bar white opacity hover-opacity-off center small">
     <a href="#" class="bar-item button" style="width:25% !important">HOME</a>
-    <a href="#about" class="bar-item button" style="width:25% !important">CURRICULUM</a>
+    <a href="#about" class="bar-item button" style="width:25% !important">CV</a>
     <a href="#portfolio" class="bar-item button" style="width:25% !important">PORTFOLIO</a>
     <a href="#contact" class="bar-item button" style="width:25% !important">CONTACT</a>
   </div>
@@ -61,14 +62,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </header>
 
   <!-- About Section -->
-  <div class="content justify text-grey padding-64" id="about">
+  <div class="content justify text-grey padding-64">
     <h2 class="text-grey">About me</h2>
     <hr style="width:200px" class="opacity">
     <p>Since I was in my early teens, I've been playing with the code, managing and designing forums, always enjoying the freedom of it.<br>
         After trying different options, I later decided to come back to it and achieve a technical diploma that would help me make it more than a hobby, pairing it with my self-taught knowledge of graphical tools.<br>        
         I love the creative aspects of it - trying to create eye-catching but tasteful designs - but most of all I revel in the possibility of learning hands-on, through trial and error.<br>        
-        My life path might sound peculiar, but the background theme of it never changed: I love expressing myself through my passions, and I enjoy knowing things (among other more earthly things like books, food, music and vintage stuff). So what better field than this, constantly evolving, where you never stop learning? </p>
-    <h3 class="padding-16 text-grey">My Skills</h3>
+        My life path might sound peculiar, but the background theme of it never changed: I love expressing myself through my passions, and I enjoy knowing things (among other more earthly things like books, food, music and vintage stuff). <br>
+        So what better field than this, constantly evolving, where you never stop learning? </p>
+    <h3 class="padding-16 text-grey" id="about">My Skills</h3>
     <p class="wide">CSS | HTML</p>
     <div class="light-grey">
       <div class="dark-grey" style="height:28px; width:100%"></div>
@@ -122,16 +124,16 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
     <!-- Grid for photos -->
     <div class="row-padding" style="margin:0 -16px">
-      <div class="half grayscale">
-        <img src="img/design.jpg" style="width:100%">
-        <img src="img/gaming.jpg" style="width:100%">
-        <img src="img/books.jpg" style="width:100%">
+      <div class="half">
+        <img src="img/design.jpg" class="grayscale" style="width:100%">
+        <img src="img/gaming.jpg" class="grayscale" style="width:100%">
+        <img src="img/books.jpg" class="grayscale" style="width:100%">
       </div>
     
-      <div class="half grayscale">
-        <img src="img/lightbulb.jpg" style="width:100%">
-        <img src="img/vaporwave.jpg" style="width:100%">
-        <img src="img/plants.jpg" style="width:100%">
+      <div class="half">
+        <img src="img/lightbulb.jpg" class="grayscale" style="width:100%">
+        <img src="img/vaporwave.jpg" class="grayscale" style="width:100%">
+        <img src="img/plants.jpg" class="grayscale" style="width:100%">
       </div>
     <!-- End photo grid -->
     </div>
@@ -144,7 +146,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <hr style="width:200px" class="opacity">
 
     <div class="section">
-      <p><i class="fa fa-map-marker xxlarge margin-right"></i> Italy</p>
       <p><i class="fa fa-linkedin xxlarge margin-right"></i> <a href="">Linkedin</a></p>
       <p><i class="fa fa-envelope xxlarge margin-right"> </i> Email: dellabonasara@gmail.com</p>
     </div><br>
