@@ -514,8 +514,7 @@ a {
 
 .sidebar {
     height: 100%;
-    width: 200px;
-    background-color: #fff;
+    width: 120px;background: #f1f1f1;
     position: fixed !important;
     z-index: 1;
     overflow: auto
