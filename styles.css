@@ -281,7 +281,8 @@ a {
 .col,
 .half,
 .third,
-.twothird{
+.twothird,
+.quarter{
     float: left;
     width: 100%
 }
@@ -509,7 +510,8 @@ a {
 .row-padding,
 .row-padding>.half,
 .row-padding>.third,
-.row-padding>.twothird{
+.row-padding>.twothird,
+.row-padding>.quarter{
     padding: 0 8px
 }
 
