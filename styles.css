@@ -286,6 +286,10 @@ a {
     float: left;
     width: 100%
 }
+.image{
+    max-width:100%;
+    height:auto
+}img{vertical-align:middle}a{color:inherit}
 
 @media (min-width:601px) {
     .col.m1 {
@@ -605,7 +609,7 @@ a {
 
 .button:hover {
     color: #000 !important;
-    background-color: #ccc !important
+    background-color: #2BE2DC !important
 }
 
 .transparent,
@@ -618,12 +622,21 @@ a {
 }
 
 /* Colors */
-.white,
-.hover-white:hover {
+.pink {
+    color: #fff !important;
+    background-color: #FF4289 !important
+}
+.aqua {
+    color: #fff !important;
+    background-color: #2BE2DC !important;
+}
+.white{
     color: #000 !important;
     background-color: #fff !important
 }
-
+.hover-white:hover{
+    color: #000 !important;
+    background-color: #2BE2DC !important}
 .black,
 .hover-black:hover {
     color: #fff !important;
