@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 html {
     box-sizing: border-box
 }
@@ -14,104 +17,122 @@ html {
 }
 
 body {
-    margin: 0
+    margin: 0;
+    font-family: 'Montserrat';
+    background: rgb(255,64,170);
+    background: radial-gradient(circle, rgba(255,64,170,1) 0%, rgba(66,205,255,1) 94%);
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section {
-    display: block
+.firstcard {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+@media (max-width: 601px){
+    .centered{
+    width: 83%;;        
+    top: 58%;
+    left: 39%;}}
+@media (min-width: 601px){
+    .centered{
+    width: 50%;     
+    top: 17%;
+    left: 29%;
+        }
+    }
+    @media (max-width: 601px){
+        .aboutme{
+            display: none;
+        }
+        .aboutmemobile{
+            font-size: medium;                   
+    font-family: 'Montserrat';
+        }}
+    @media (min-width: 601px){
+        .aboutme{
+            font-size: 1.5rem;            
+    font-family: 'Montserrat';
+            width: 50%;
+            top: 81%;
+            left: 73%;
+            background-color: rgb(255, 64, 170, .25);
+            }
+            .aboutmemobile{
+                display: none;
+            }
+        }
+.centered, .aboutme {    
+    color: #fff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: justify;    
 }
 
-audio{
-    display: inline-block
+span {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+    background-image: linear-gradient(#FF40AA, #FF40AA);
+    background-size: 100% 10px;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+     transition: background-size .7s, background-position .5s ease-in-out;
+  }
+  
+  span:hover {
+    background-size: 100% 100%;
+    background-position: 0% 100%;
+    transition: background-position .7s, background-size .5s ease-in-out;
+  }
+.home-title p{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 1.2;
 }
 
-a {
-    background-color: transparent
+.home-title p::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(-101%);
 }
 
-a:active,
-a:hover {
-    outline-width: 0
+.home-title p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(0);
 }
 
-b {
-    font-weight: bolder
+.home-title p:nth-of-type(1)::before,
+.home-title p:nth-of-type(1)::after{
+    animation-delay: 1s;
 }
 
-small {
-    font-size: 80%
+.home-title p:nth-of-type(2)::before,
+.home-title p:nth-of-type(2)::after{
+    animation-delay: 1.5s;
 }
 
-
-img {
-    border-style: none
+@keyframes a-ltr-after{
+    0% {transform: translateX(-100%)}
+    100% {transform: translateX(101%)}
 }
 
-
-hr {
-    box-sizing: content-box;
-    height: 0;
-    overflow: visible
+@keyframes a-ltr-before{
+    0% {transform: translateX(0)}
+    100% {transform: translateX(200%)}
 }
-
-button,
-input,
-select,
-textarea{
-    font: inherit;
-    margin: 0
-}
-
-
-button,
-input {
-    overflow: visible
-}
-
-button,
-select {
-    text-transform: none
-}
-
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-    -webkit-appearance: button
-}
-
-button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
-    border-style: none;
-    padding: 0
-}
-
-button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
-    outline: 1px dotted ButtonText
-}
-
-html,
-body {
-    font-family: Verdana, sans-serif;
-    font-size: 15px;
-    line-height: 1.5
-}
-
 html {
     overflow-x: hidden
 }
@@ -142,7 +163,6 @@ h3 {
 
 hr {
     border: 0;
-    border-top: 1px solid #eee;
     margin: 20px 0
 }
 
@@ -151,9 +171,13 @@ img {
 }
 
 a {
-    color: inherit
+    color: inherit;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1rem;
 }
-
+a:hover{
+    transform: rotate(180deg);
+}
 .btn,
 .button {
     border: none;
@@ -178,16 +202,9 @@ a {
     user-select: none
 }
 
-.disabled,
-.btn:disabled,
-.button:disabled {
-    cursor: not-allowed;
-    opacity: 0.3
-}
-
 .sidebar {
     height: 100%;
-    width: 120px;background: #f1f1f1;
+    width: 120px;background: #fff;
     position: fixed !important;
     z-index: 1;
     overflow: auto
@@ -609,7 +626,7 @@ a {
 
 .button:hover {
     color: #000 !important;
-    background-color: #2BE2DC !important
+    background-color: #42CDFF !important
 }
 
 .transparent,
@@ -620,15 +637,9 @@ a {
 .hover-none:hover {
     box-shadow: none !important
 }
-
-/* Colors */
 .pink {
     color: #fff !important;
-    background-color: #FF4289 !important
-}
-.aqua {
-    color: #fff !important;
-    background-color: #2BE2DC !important;
+    background-color: #42CDFF !important
 }
 .white{
     color: #000 !important;
@@ -636,7 +647,7 @@ a {
 }
 .hover-white:hover{
     color: #000 !important;
-    background-color: #2BE2DC !important}
+    background-color: #42CDFF !important;}
 .black,
 .hover-black:hover {
     color: #fff !important;

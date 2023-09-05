@@ -5,11 +5,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
 <style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
@@ -27,12 +25,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p>HOME</p>
   </a>
   <a href="#about" class="bar-item button padding-large hover-white">
-    <i class="fa fa-user-secret xxlarge"></i>
+    <i class="fa fa-code-pull-request xxlarge"></i>
     <p>CURRICULUM</p>
   </a>
   <a href="#portfolio" class="bar-item button padding-large hover-white">
     <i class="fa fa-folder-open xxlarge"></i>
-    <p>PORTFOLIO</p>
+    <p>PROJECTS</p>
   </a>
   <a href="#contact" class="bar-item button padding-large hover-white">
     <i class="fa fa-bug xxlarge"></i>
@@ -45,7 +43,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="bar white opacity hover-opacity-off center small">
     <a href="#" class="bar-item button" style="width:25% !important">HOME</a>
     <a href="#about" class="bar-item button" style="width:25% !important">CV</a>
-    <a href="#portfolio" class="bar-item button" style="width:25% !important">PORTFOLIO</a>
+    <a href="#portfolio" class="bar-item button" style="width:25% !important">PROJECTS</a>
     <a href="#contact" class="bar-item button" style="width:25% !important">CONTACT</a>
   </div>
 </div>
@@ -53,22 +51,27 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Page Content -->
 <div class="padding-large" id="main">
   <!-- Header/Home -->
-  <header class="container padding-32 center white" id="home">
-    <img src="img/portfoliocover.png" alt="boy" class="image" width="992" height="1108">
-    <h2>Superior Technician in Developing of Software Applications <br>and Administration of Business Information Systems</h2>
-    
+  <header class="firstcard" id="home">
+    <img src="img/backgroundsculpture.png" class="image" width="992">
+    <h2 class="centered"><span>front-end software, web developer & graphic designer</span></h2>
+    <h2 class="aboutme home-title"><span>About me</span>
+    <p>Since I was in my early teens, I've been playing with the code, managing and designing forums, always enjoying the freedom of it.<br>
+      After trying different options, I later decided to come back to it and achieve a technical diploma that would help me make it more than a hobby, pairing it with my self-taught knowledge of graphical tools.<br>        
+      I love the creative aspects of it - trying to create eye-catching but tasteful designs - but most of all I revel in the possibility of learning hands-on, through trial and error.<br>        
+      My life path might sound peculiar, but the background theme of it never changed: I love expressing myself through my passions, and I enjoy knowing things (among other more earthly things like books, food, music and vintage stuff). <br>
+      So what better field than this, constantly evolving, where you never stop learning? </p></h2>
   </header>
 
   <!-- About Section -->
-  <div class="content justify text-grey padding-64">
-    <h2 class="text-grey">About me</h2>
+  <div class="content justify text-white padding-64" id="about">
+    <h2 class="aboutmemobile"><span>About me</span>
     <hr style="width:200px" class="opacity">
     <p>Since I was in my early teens, I've been playing with the code, managing and designing forums, always enjoying the freedom of it.<br>
         After trying different options, I later decided to come back to it and achieve a technical diploma that would help me make it more than a hobby, pairing it with my self-taught knowledge of graphical tools.<br>        
         I love the creative aspects of it - trying to create eye-catching but tasteful designs - but most of all I revel in the possibility of learning hands-on, through trial and error.<br>        
         My life path might sound peculiar, but the background theme of it never changed: I love expressing myself through my passions, and I enjoy knowing things (among other more earthly things like books, food, music and vintage stuff). <br>
-        So what better field than this, constantly evolving, where you never stop learning? </p>
-    <h3 class="padding-16 text-grey" id="about">My Skills</h3>
+        So what better field than this, constantly evolving, where you never stop learning? </p></h2>
+    <h3 class="padding-16 text-white"><span>Skillset</span></h3>
     <p class="wide">CSS | HTML</p>
     <div class="light-grey">
       <div class="pink" style="height:28px; width:100%"></div>
@@ -92,7 +95,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <div class="light-grey">
       <div class="pink" style="height:28px; width:100%"></div>
     </div><br>
-    <h3 class="padding-16 text-grey">Currently learning</h3>
+    <h3 class="padding-16 text-white"><span>Currently learning</span></h3>
     <p class="wide">C# | .NET</p>
     <div class="light-grey">
       <div class="pink" style="height:28px; width:60%"></div></div>
@@ -108,16 +111,16 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     
     
     <!-- Testimonials -->
-    <h3 class="padding-24 text-grey">My Reputation</h3>  
+    <h2><span>They say about me</span></h2>
     <img src="img/sans.png" alt="Avatar" class="left circle margin-right" style="width:80px">
-    <p><span class="large margin-right">My mom</span> CEO at My Mom</p>
-    <p>I think Sara is pretty neat! You should hire her!</p><br>
+    <p><div class="large margin-right home-title"><h1>My mom</h1></div> CEO at My Mom</p>
+    <p>She remembers all my passwords and sends all my emails for me. That's true talent!</p><br>
   <!-- End About Section -->
   </div>
   
   <!-- Portfolio Section -->
   <div class="padding-64 content" id="portfolio">
-    <h2 class="text-grey">Projects</h2>
+    <h2 class="text-white"><span>Projects</span></h2>
     <hr style="width:200px" class="opacity">
 
     <!-- Grid for photos -->
@@ -139,13 +142,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </div>
 
   <!-- Contact Section -->
-  <div class="padding-64 content text-grey" id="contact">
-    <h2 class="text-grey">Contact Me</h2>
+  <div class="padding-64 content text-white" id="contact">
+    <h2><span>Contact Me</span></h2>
     <hr style="width:200px" class="opacity">
 
     <div class="section">
-      <p><i class="fa fa-linkedin xxlarge margin-right"></i> <a href="https://www.linkedin.com/in/sara-della-bona-842878261">Linkedin</a></p>
-      <p><i class="fa fa-envelope xxlarge margin-right"> </i> Email: dellabonasara@gmail.com</p>
+      <p><i class="fa-brands fa-linkedin-in xxlarge margin-right"></i> <a href="https://www.linkedin.com/in/sara-della-bona-842878261">Linkedin</a></p>
+      <p><i class="fa fa-envelope xxlarge margin-right"> </i> dellabonasara@gmail.com</p>
     </div><br>
     <p>Let's get in touch. Send me a message!</p>
 
