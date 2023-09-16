@@ -47,7 +47,7 @@ html {
    .card-info {
     position: relative;
     z-index: 3;
-    color: #fff;
+    color: #595959;
     opacity: 0;
     transform: translateY(20%);
     transition: 0.5s;    
@@ -887,3 +887,4 @@ a:hover{
 .hover-border-dark-gray:hover {
     border-color: #616161  
 }
+
