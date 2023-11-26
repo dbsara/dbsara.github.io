@@ -88,13 +88,10 @@ html {
    
    /*Hover*/
    .card:hover {
-    transform: translateY(5%);
    }
    
    .card:hover .card-img {
     opacity: 0.5;
-    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
-    filter: blur(4px);
    }
    
    .card:hover .card-info {
